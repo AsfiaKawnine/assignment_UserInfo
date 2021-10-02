@@ -1,0 +1,250 @@
+{
+	"info": {
+		"_postman_id": "5f51fec8-976e-4b85-afac-9644cf57b519",
+		"name": "assignment-user-info",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "get child informations",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/childs/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"childs",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create child user",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"first_name\": \"Imtiaz\",\r\n    \"last_name\": \"Mahmud\",\r\n    \"parent\": 1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/childs/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"childs",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete child user",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/childs/2/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"childs",
+						"2",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update child user",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 2,\r\n    \"first_name\": \"Wachia\",\r\n    \"last_name\": \"Huma\",\r\n    \"parent\": 1\r\n}"
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/childs/2/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"childs",
+						"2",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get parent information",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/parents/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"parents",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create parent user",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"first_name\": \"Shirin\",\r\n    \"last_name\": \"Hoque\",\r\n    \"address\": {\r\n        \"street\": \"Boalkhali\",\r\n        \"city\": \"Chattagram\",\r\n        \"state\": \"Bangladesh\",\r\n        \"zip\": \"4366\"\r\n    }\r\n}"
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/parents/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"parents",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete parent user",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/parents/3/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"parents",
+						"3",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update parent user",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"first_name\": \"Shirin\",\r\n    \"last_name\": \"Hoque\",\r\n    \"address\": {\r\n        \"id\": 4,\r\n        \"street\": \"Boalkhali\",\r\n        \"city\": \"Chattagram\",\r\n        \"state\": \"Bangladesh\",\r\n        \"zip\": \"4366\"\r\n    }\r\n}"
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/parents/4/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"parents",
+						"4",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
