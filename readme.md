@@ -39,7 +39,7 @@ For updating parent user:
 
 For deleting parent user:
 
-![alt text](./image/delete-parent.png)
+![alt text](./image/delete-parent.PNG)
 
 For creating child user:
 
@@ -55,4 +55,4 @@ For updating child user:
 
 For deleting child user:
 
-![alt text](./image/delete-child.png)
+![alt text](./image/delete-child.PNG)
